@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentation.main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:gravity="start"
+        android:minHeight="@dimen/dimen_34dp">
+
+        <ImageView
+            android:id="@+id/im_search_pharmacynews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:padding="@dimen/dimen_2dp"
+            android:src="@drawable/search"
+            app:tint="#767777" />
+
+        <com.fsoc.sheathcare.presentation.widget.ClearFocusEditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:hint="Tìm kiếm sản phẩm"
+            android:layout_toEndOf="@id/im_search_pharmacynews"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/dimen_4dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#767777"
+            android:textSize="@dimen/_12sdp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchProduct"
+            android:layout_below="@id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_0dp"
+            android:layout_below="@id/editSearch"
+            android:background="#979797" />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_list_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_search_code"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_info_product" />
+
+</RelativeLayout>

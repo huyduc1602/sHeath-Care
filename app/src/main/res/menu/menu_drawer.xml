@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_inbox_24"
+            android:title="Trang chủ" />
+
+
+        <item
+            android:id="@+id/a2"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_star_border_24"
+            android:title="Đánh giá" />
+
+
+        <item
+            android:id="@+id/a4"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_drafts_24"
+            android:title="Hòm thư" />
+        <item
+            android:id="@+id/a3"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Về chúng tôi" />
+        <item
+            android:id="@+id/btnLogout"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Đăng xuất" />
+
+    </group>
+</menu>

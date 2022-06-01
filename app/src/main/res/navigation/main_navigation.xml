@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/productAndListFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.map.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail" />
+
+    <fragment
+        android:id="@+id/infoProductFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.detail.InfoProductFragment"
+        android:label="InfoProducFragment"
+        tools:layout="@layout/fragment_info_product" />
+    <fragment
+        android:id="@+id/detailInforProductFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.detail.DetailInfoProductFragment"
+        android:label="DetailInfoProducFragment"
+        tools:layout="@layout/fragment_detail_info_product" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/covidNewsFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.covidnews.CovidNewsFragment"
+        android:label="Covid News"
+        tools:layout="@layout/fragment_covid_news" />
+    <fragment
+        android:id="@+id/commentProductFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.detail.CommentProductFragment"
+        android:label="CommentProductFragment" />
+
+    <fragment
+        android:id="@+id/productAndListFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.home.HomeAndHealthNewsTabFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_product_list_and_news_tab" />
+
+    <fragment
+        android:id="@+id/newProductFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.home.HealthNewsFragment"
+        android:label="NewsProductFragment"
+        tools:layout="@layout/fragment_news_product" />
+    <fragment
+        android:id="@+id/detailInfoHealthNewsFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.home.DetailInformationHealthNewsFragment"
+        android:label="InfoHealthNewsFragment"
+        tools:layout="@layout/fragment_detail_info_health_news" />
+    <fragment
+        android:id="@+id/chatDetailFragment"
+        android:name="com.fsoc.sheathcare.presentation.main.chat.ChatDetailFragment"
+        android:label="ChatDetailFragment" />
+</navigation>
